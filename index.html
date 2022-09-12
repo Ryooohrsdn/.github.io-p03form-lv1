@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ID">
+<head>
+    <title>PMB</title>
+    <style>
+        img {
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+        }
+        table th, table td {
+            text-align: left;
+        }
+        div p{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <img src="kopsurat.png">
+    <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+    <div>
+        <h3>Petunjuk Pengisian</h3>
+        <ol>
+            <li>Isilah data dengan cermat, teliti dan benar</li>
+            <li>Isilah Menggunakan Huruf Kapital</li>
+            <li>Salah penulisan pada pengisian formulir ini akan berakibat fatal pada penulisan data teman-teman di ijazah</li>
+        </ol>
+    </div>
+    <form method="post">
+        <fieldset>
+            <table>
+                <tr>
+                        <th>1.</th>
+                        <th>Nama Lengkap</th>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="Nama" maxlength="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2.</th>
+                        <th>Tanggal Ujian</th>
+                        <td>:</td>
+                        <td>
+                            <input type="date" name="TTL">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>3.</th>
+                        <th>Jenis Kelamin</th>
+                        <td>:</td>
+                        <td>
+                            <input type="radio">Laki-Laki <input type="radio">Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <th valign="top">4.</th>
+                        <th valign="top">Jurusan</th>
+                        <td valign="top">:</td>
+                        <td>
+                        <table border="1" cellpadding="7">
+                                <thead>
+                                <tr>
+                                <th rowspan="2">JENJANG</th>
+                                <th colspan="2">PROGRAM STUDI</th>
+                            </tr>
+                                <tr>
+                                    <th>Pagi (Reguler)</th>
+                                    <th>Sore (Karyawan)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>D3 (Diploma 3)</th>
+                                    <td>
+                                    <input type="radio" name="Diploma">
+                                    Manajemen Informatika<br>
+                                    <input type="radio" name="Diploma">
+                                    Komputerisasi Akuntasi
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="Diploma">
+                                        Manajemen Informatika<br>
+                                        <input type="radio" name="Diploma">
+                                        Komputerisasi Akuntasi
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>S1 (Sarjana 1)</th>
+                                    <td>
+                                    <input type="radio" name="strata">
+                                    Teknik Informatika<br>
+                                    <input type="radio" name="strata">
+                                    Rekayasa Perangkat Lunak<br>
+                                    <input type="radio" name="strata">
+                                    Sistem Informasi
+                                    </td>
+                                </tr>
+                                </tbody>
+                                </table>
+         </fieldset>
+         <br>
+         <fieldset>
+            <legend><b>PENDIDIKAN TERAKHIR</b></legend>
+            <table>
+                <tbody><tr>
+                    <th align="left" valign="top" width="5"> </th>
+                    <th align="left" valign="top">Asal SMA/SMK/Perguruan Tinggi</th>
+                    <td valign="top">:</td>
+                    <td valign="top"><input type="text" name="asal_sekolah" maxlength="14"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th align="left">Status Sekolah/Perguruan Tinggi</th>
+                    <td valign="top">:</td>
+                    <td valign="top">
+                        <select name="status_sekolah">
+                            <option value=""></option>
+                            <option value="Negeri">Negeri</option>
+                            <option value="Swasta">Swasta</option>
+                            <option value="Luar Negeri">Luar Negeri</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th align="left">Jurusan</th>
+                    <td>:</td>
+                    <td><input type="text" name="jurusan" maxlength="14"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th align="left">Nomor Ijazah SMA/SMK/Diploma III/S1</th>
+                    <td valign="top">:</td>
+                    <td valign="top"><input type="text" name="jurusan" maxlength="14"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th align="left">Tanggal Lulus</th>
+                    <td>:</td>
+                    <td><input type="date" name="tgl_lulus"></td>
+                </tr>
+            </tbody></table>
+        </fieldset>
+        <br>
